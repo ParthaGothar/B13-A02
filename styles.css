@@ -17,16 +17,14 @@ body{
     
 }
 
-/* navbar section  */
-    /* background-color: #1A0B2E; */
+                                        /* navbar section  */
+                                            /* background-color: #1A0B2E; */
 
 nav{
     max-width: 1600px;
     margin: 0 auto;
     padding: 24px 20px;
     background-color: #1A0B2E;
-    border: 1px solid gainsboro;
-
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -41,7 +39,7 @@ nav h3{
 }
 
 nav h3 span{
-    background: linear-gradient(to top right, #F7E93F, #FB09B4, #9100F8);
+    background: linear-gradient(to top right, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -67,12 +65,12 @@ nav div a:hover{
 nav button{
     max-width: 135px;
     padding: 12px 16px;
-    background: linear-gradient(to top right, #F7E93F, #FB09B4, #9100F8);
+    background: linear-gradient(to top right, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1));
     font-size: 16px;
     font-weight: 600;
     color: #FFFFFF;
     border: none;
-    border-radius: 1000px;
+    border-radius: 10000px;
     cursor: pointer;
     transition: transform .20s ease;
 }
@@ -91,6 +89,134 @@ nav img:hover{
     transform: rotate(90deg);
 }
 
+                                /* Hero section */
+
+#hero-container{
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 101px 525px;
+
+    background-image: url("./assets/hero-bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-content{
+    max-width: 550px;
+    margin: 0 auto;
+}
+.hero-image{
+    max-width: 350px;
+    margin: 0 auto;
+    position: relative;
+
+
+}
+.background-logo{
+    max-width: 350px;
+    display: block;
+}
+
+.logo-image{
+    max-width: 200px;
+    position: absolute;
+    top: 22%;
+    left: 33%;
+}
+
+.badge{
+    max-width: 75px;
+    background-color: #00FF88;
+    padding: 8px 16px;
+    color: #1A0B2E;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 1000px;
+    position: absolute;
+    top: 7%;
+    right: 2%;
+    box-shadow: 0 3px 27px rgba(0, 255, 136, 0.5);
+    animation: pulse 2s ease-in-out infinite;
+}
+
+#hero-container h2{
+    max-width: 550px;
+    margin: 40px auto 8px;
+    font-size: 60px;
+    font-weight: 800;
+    text-align: center;
+    color: #FFFFFF;
+
+
+}
+
+#hero-container p{
+    max-width: 550px;
+    margin: 0 auto 24px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+.hero-btn{
+    max-width: 356px;
+    margin: 0 auto;
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+
+}
+
+.btn1{
+    max-width: 201px;
+    padding: 12px 20px;
+    background: linear-gradient(to top right, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1));
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: transform .20s ease;
+
+}
+.btn1:hover{
+    transform: scale(1.08);
+}
+
+.btn2{
+    max-width: 147px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #00FF88;
+    border: 1px solid #00FF88;
+    border-radius: 10000px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: transform .20s ease;
+}
+
+.btn2:hover{
+    transform: scale(1.08);
+}
+
+
+
+        
 
 
 
@@ -102,7 +228,13 @@ nav img:hover{
 
 
 
-
+@keyframes pulse {
+    0%   {transform: scale(1);}
+    25%  {transform: scale(1);}
+    50%  {transform: scale(1.1);}
+    75%  {transform: scale(1);}
+    100% {transform: scale(1);}
+}
 
 
 
@@ -110,6 +242,9 @@ nav img:hover{
 @media screen and (max-width: 576px){
     nav{
         justify-content: space-between;
+    }
+    nav h3{
+        font-size: 36px;
     }
     nav div{
         display: none;
@@ -120,4 +255,16 @@ nav img:hover{
     nav img{
         display: block;
     }
+
+    #hero-container{
+    padding: 40px 20px;
+    }
+
+    #hero-container h2{
+    margin: 24px auto 8px;
+    font-size: 40px;
+    font-weight: 800;
+
+}
+
 }
