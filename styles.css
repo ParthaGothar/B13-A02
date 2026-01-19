@@ -1,5 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+    
+}
+
+/* navbar section  */
+    /* background-color: #1A0B2E; */
+
+nav{
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 24px 20px;
+    background-color: #1A0B2E;
+    border: 1px solid gainsboro;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+nav h3{
+    max-width: 137px;
+    color: #FFFFFF;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+nav h3 span{
+    background: linear-gradient(to top right, #F7E93F, #FB09B4, #9100F8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+nav div{
+    max-width: 218px;
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+nav div a{
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 5px;
+}
+nav div a:hover{
+    background-color: rgba(128, 128, 128, 0.474);
+}
+
+nav button{
+    max-width: 135px;
+    padding: 12px 16px;
+    background: linear-gradient(to top right, #F7E93F, #FB09B4, #9100F8);
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 1000px;
+    cursor: pointer;
+    transition: transform .20s ease;
+}
+nav button:hover{
+    transform: scale(1.08);
+}
+
+nav img {
+    max-width: 24px;
+    display: none;
+    cursor: pointer;
+    transition: transform .35s ease;
+}
+
+nav img:hover{
+    transform: rotate(90deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 576px){
+    nav{
+        justify-content: space-between;
+    }
+    nav div{
+        display: none;
+    }
+    nav button{
+        display: none;
+    }
+    nav img{
+        display: block;
+    }
 }
