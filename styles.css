@@ -296,6 +296,54 @@ nav img:hover{
     opacity: 0.8;
 }
 
+                                                 /* Why choose part */
+
+#why-choose{
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 120px 200px;
+    background-color: #230E3D;
+
+}
+#why-choose h2{
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.why-choose-grid{
+    display: grid;
+    gap: 30px;  
+    grid-template-areas: 
+    "audio  mobile      mobile"
+    "audio  community   community"
+    "exclusive  exclusive   resources"
+}
+.audio{
+    grid-area: audio;
+}
+
+.mobile{
+    grid-area: mobile;
+}
+
+.community{
+    grid-area: community;
+}
+
+.exclusive{
+    grid-area: exclusive;
+}
+
+.resources{
+    grid-area: resources;
+}
+
+
 
 
         
