@@ -24,6 +24,7 @@ nav{
     max-width: 1600px;
     margin: 0 auto;
     padding: 24px 20px;
+    border-bottom: 1px solid rgba(65, 37, 103, 1);
     background-color: #1A0B2E;
     display: flex;
     justify-content: space-around;
@@ -89,7 +90,7 @@ nav img:hover{
     transform: rotate(90deg);
 }
 
-                                /* Hero section */
+                                                      /* Hero section */
 
 #hero-container{
     max-width: 1600px;
@@ -214,6 +215,87 @@ nav img:hover{
     transform: scale(1.08);
 }
 
+                                            /* About section */
+
+#about-container{
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 50px 200px 120px;
+    background-color: #1A0B2E;
+}
+
+.about-info{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+    border-bottom: 1px solid rgba(65, 37, 103, 1);
+
+}
+
+.about-info h3{
+    max-width: 1200px;
+    margin: 0 auto 16px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.about-info p{
+    max-width: 1200px;
+    margin: 0 auto 30px;
+    padding: 0 160px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+.about-info h5{
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+.about-grid{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+}
+.box{
+    max-width: 240px;
+}
+.box h2{
+    max-width: 240px;
+    margin: 0 auto 16px;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 58px;
+    text-align: center;
+    color: #00FF88;
+}
+
+.box p{
+    max-width: 240px;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
 
 
         
@@ -240,6 +322,7 @@ nav img:hover{
 
 
 @media screen and (max-width: 576px){
+    /* nav-section */
     nav{
         justify-content: space-between;
     }
@@ -255,7 +338,7 @@ nav img:hover{
     nav img{
         display: block;
     }
-
+        /* banner-section */
     #hero-container{
     padding: 40px 20px;
     }
@@ -265,6 +348,51 @@ nav img:hover{
     font-size: 40px;
     font-weight: 800;
 
-}
+    }
+
+        /* about section */
+
+    #about-container{
+    padding: 40px 20px 40px;
+    }
+
+    .about-info{
+    padding-bottom: 40px;
+
+    }
+
+    .about-info h3{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    }
+
+    .about-info p{
+    margin: 0 auto 10px;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    
+    }
+
+    .about-info h5{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    }
+    .about-grid{
+    padding-top: 40px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 40px;
+    }
+
+    .box h2{
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 48px;
+    }
+
 
 }
