@@ -41,6 +41,7 @@ nav h3{
 
 nav h3 span{
     background: linear-gradient(to top right, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1));
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -470,7 +471,7 @@ nav img:hover{
 
 .host{
     max-width: 1200px;
-    margin: 120px auto;
+    margin: 120px auto 0;
 }
 
 .host h2{
@@ -538,6 +539,70 @@ nav img:hover{
 }
 
 
+                                    /* Footer section */
+
+
+#footer{
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 120px;
+    background: url("./assets/footer-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#footer h2{
+    margin: 0 auto 32px;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 73px;
+    color: #FFFFFF;
+}
+
+#footer h2 span{
+    background: linear-gradient(to top right, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.footer-logo-container{
+    max-width: 544px;
+    margin: 0 auto 32px;
+    display: grid;
+    grid-template-columns: 87px 152px 99px 86px;
+    gap: 40px;
+}
+
+.footer-logo-container>*{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+
+}
+
+.footer-logo-container span{
+    color: #FFFFFF;
+    opacity: 0.6;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+}
+
+#footer p{
+    margin: 0 auto;
+    color: #FFFFFF;
+    opacity: 0.6;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+}
+
+
 
 
 
@@ -559,7 +624,9 @@ nav img:hover{
 
 
 @media screen and (max-width: 576px){
-    /* nav-section */
+
+                                         /* nav-section */
+
     nav{
         justify-content: space-between;
     }
@@ -575,7 +642,11 @@ nav img:hover{
     nav img{
         display: block;
     }
-        /* banner-section */
+
+
+                                          /* banner-section */
+
+
     #hero-container{
     padding: 40px 20px;
     }
@@ -587,7 +658,9 @@ nav img:hover{
 
     }
 
-        /* about section */
+
+                                            /* about section */
+
 
     #about-container{
     padding: 40px 20px 40px;
@@ -631,7 +704,9 @@ nav img:hover{
     line-height: 48px;
     }
 
-                                /* Why choose section */
+
+                                                /* Why choose section */
+
 
     #why-choose{
     padding: 40px 20px;
@@ -661,7 +736,9 @@ nav img:hover{
     line-height: 27px;
     }
 
-                                    /* featured section  */
+
+                                                    /* featured section  */
+
 
     #featured-and-host-container{
     padding: 40px 20px;
@@ -730,11 +807,44 @@ nav img:hover{
         margin: 0 auto;
     }
 
+                                        /* footer section  */
 
 
+    #footer{
+        padding: 40px 20px;
+    }
+
+    #footer h2{
+        margin: 0 auto 24px;
+        font-size: 40px;
+        font-weight: 800;
+    }
+
+    .footer-logo-container{
+        max-width: 255px;    
+        margin: 0 auto 24px;
+        grid-template-columns: 99px 152px;
+        grid-template-rows: repeat(2, 24px);
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .footer-logo-container>*{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
 
 
-
+    .footer-logo-container .logo-3{
+        width: 99px;
+        margin-left: 27px;
+    }
+    .footer-logo-container .logo-4{
+        width: 86px;
+        margin-left: 27px;
+    }
 
 
 
