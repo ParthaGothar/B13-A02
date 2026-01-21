@@ -372,10 +372,170 @@ nav img:hover{
     opacity: 0.6;
 }
 
+                                            /* featured section */
 
 
+#featured-and-host-container{
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 120px 200px;
+    background-color: rgba(26, 11, 46, 1);
+}  
 
-        
+.featured{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.featured h2{
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+}
+
+.episodes{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.contents{
+    max-width: 400px;
+}
+
+.video-container{
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 24px 24px 0 0;
+    overflow: hidden;
+}
+
+.video-container iframe{
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16 / 9;
+    border: 0;
+    display: block;
+}
+
+.featured-info{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 24px;
+    background-color: rgba(37, 13, 68, 1);
+    border-radius: 0 0 24px 24px;
+}
+
+.featured-info h4{
+    margin: 0 auto 12px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+
+.featured-info h5{
+    margin: 0 auto 12px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+
+.featured-info div{
+    max-width: 332px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.featured-info img{
+    max-width: 20px;
+    color: #00FF88;
+}
+
+.featured-info p{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #00FF88;
+}
+
+.host{
+    max-width: 1200px;
+    margin: 120px auto;
+}
+
+.host h2{
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    color: #FFFFFF;
+}
+
+.host-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: rgba(53, 17, 101, 0.4);
+    border-radius: 40px;
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.host-img{
+    max-width: 200px;
+}
+
+.host-info h3{
+    margin-bottom: 16px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    color: #FFFFFF;
+}
+
+.host-info p{
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+
+.host-logo-section{
+    width: 184px;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.host-logo{
+    width: 40px;
+    padding: 10px;
+    border: 1px solid rgba(83, 60, 114, 1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.host-logo img{
+    width: 20px;
+}
 
 
 
@@ -500,6 +660,83 @@ nav img:hover{
     font-size: 22px;
     line-height: 27px;
     }
+
+                                    /* featured section  */
+
+    #featured-and-host-container{
+    padding: 40px 20px;
+    }
+
+    .featured h2{
+    margin: 0 auto 24px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    }
+
+    .episodes{
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    }
+
+    .featured-info{
+    padding: 16px;
+    }
+
+    .featured-info h4{
+    margin: 0 auto 8px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    }
+
+    .featured-info h5{
+    margin: 0 auto 8px;
+    }
+
+    .host{
+    margin: 60px auto;
+    }
+
+    .host h2{
+    margin: 0 auto 24px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    }
+
+    .host-container{
+    padding: 24px;
+    border-radius: 24px;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    .host-info{
+        text-align: center;
+    }
+
+    .host-info h3{
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+        text-align: center;
+    }
+
+    .host-logo-section{
+        margin: 0 auto;
+    }
+
+
+
+
+
+
+
+
 
 
 
