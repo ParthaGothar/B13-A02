@@ -77,7 +77,7 @@ nav button{
     transition: transform .20s ease;
 }
 nav button:hover{
-    transform: scale(1.08);
+    transform: scale(1.08) translateY(-2px);
 }
 
 nav img {
@@ -192,7 +192,7 @@ nav img:hover{
 
 }
 .btn1:hover{
-    transform: scale(1.08);
+    transform: scale(1.08) translateY(-2px);
 }
 
 .btn2{
@@ -213,7 +213,7 @@ nav img:hover{
 }
 
 .btn2:hover{
-    transform: scale(1.08);
+    transform: scale(1.08) translateY(-2px);
 }
 
                                             /* About section */
@@ -532,6 +532,12 @@ nav img:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.host-logo:hover{
+    transform: scale(1.2) translateY(-6px);
+    
 }
 
 .host-logo img{
@@ -581,7 +587,12 @@ nav img:hover{
     align-items: center;
     justify-content: space-between;
     gap: 8px;
+    cursor: pointer;
 
+}
+
+.footer-logo-container>*:hover{
+    transform: scale(1.2) translateY(-2px);
 }
 
 .footer-logo-container span{
