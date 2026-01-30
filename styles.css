@@ -109,26 +109,26 @@ nav img:hover{
     margin: 0 auto;
 }
 .hero-image{
-    max-width: 350px;
+    width: 75%;
     margin: 0 auto;
     position: relative;
 
 
 }
 .background-logo{
-    max-width: 350px;
+    width: 100%;
     display: block;
 }
 
 .logo-image{
-    max-width: 200px;
+    width: 34%;
     position: absolute;
     top: 22%;
     left: 33%;
 }
 
 .badge{
-    max-width: 75px;
+    width: 21.5%;
     background-color: #00FF88;
     padding: 8px 16px;
     color: #1A0B2E;
@@ -137,8 +137,8 @@ nav img:hover{
     font-weight: 600;
     border-radius: 1000px;
     position: absolute;
-    top: 7%;
-    right: 2%;
+    top: 4%;
+    right: 8%;
     box-shadow: 0 3px 27px rgba(0, 255, 136, 0.5);
     animation: pulse 2s ease-in-out infinite;
 }
@@ -590,12 +590,10 @@ nav img:hover{
     justify-content: space-between;
     gap: 8px;
     cursor: pointer;
-    /* transition: transform 5s ease-in-out; */
 
 }
 
 .footer-logo-container>*:hover img{
-    /* transform: scale(1.2) translateY(-5px); */
     animation: drop .3s ease-in-out;
 }
 
@@ -679,7 +677,21 @@ nav img:hover{
     font-weight: 800;
 
     }
+    .hero-image{
+        width: 50%;
+    }
 
+    .logo-image{
+        width: 24%;
+        top: 32%;
+        left: 38%;
+    }
+
+    .badge{
+        width: 26.5%;
+        top: 2%;
+        right: 2%;
+    }
 
                                             /* about section */
 
